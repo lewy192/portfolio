@@ -1,4 +1,7 @@
 .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -9,6 +12,7 @@
 .accentChar {
     color: var(--accent-color);
     letter-spacing: 2px;
+    font-style: bold;
 }
 
 .navButtons {
