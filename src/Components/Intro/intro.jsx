@@ -3,13 +3,9 @@ import React, { useLayoutEffect, useRef, useState } from "react";
 import { MailtoButton } from "../UI/Button";
 import styles from "./intro.module.css";
 import Image from "next/image";
-import portrait from "../../../public/portrait.svg";
-import styled from "styled-components";
-
-const MailtoButtonCustom = styled(MailtoButton)`
-    align-self: flex-end;
-    transform: translateX(-4px);
-`;
+import portrait from "../../../public/portrait.png";
+import box from "../../../public/box.svg";
+import dots from "../../../public/dots.svg";
 
 export default function Intro() {
     const ref = useRef(null);
@@ -31,19 +27,25 @@ export default function Intro() {
                         He crafts responsive websites where technologies meet
                         creativity
                     </p>
-                    <MailtoButtonCustom href="mailto:">
-                        Contact Me!
-                    </MailtoButtonCustom>
+                    <MailtoButton href="mailto:">Contact Me!</MailtoButton>
                 </div>
             </div>
             <div className={styles.right}>
-                <Image src={portrait} width="100%" height="100%" ref={ref} />
+                <Image src={box} className={styles.box} alt="" />
+                <Image
+                    src={portrait}
+                    ref={ref}
+                    alt="portrait of lewis hill"
+                    className={styles.portrait}
+                />
+                <Image src={dots} className={styles.dots} alt="" />
 
                 <div
                     className={styles.imageFooter}
                     style={{ width: `${width}px` }}
                 >
-                    Currently working on <b>Portfolio</b>
+                    Currently working on{" "}
+                    <span className={styles.statusHighlight}>Portfolio</span>
                 </div>
             </div>
         </div>

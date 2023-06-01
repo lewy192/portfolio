@@ -1,3 +1,28 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.left {
+    /* flex: 0 0 65%; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    transform: translateY(-40px);
+}
+
+.right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    /* flex: 0 0 35%; */
+}
 .headerHighlight {
     color: var(--accent-color);
     font-family: "Libre Barcode 128 Text", cursive;
@@ -7,34 +32,57 @@
     font-family: "Libre Barcode 128 Text", cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 5vw;
-    line-height: 5vw;
+    font-size: 9vw;
+    align-self: center;
+    line-height: 8vw;
+    align-self: left;
 }
-.left {
-    flex: 0 0 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
-    transform: translateY(-40px);
-}
+
 .desc {
     font-size: 16px;
 }
 .descriptionContainer {
     display: flex;
     flex-direction: column;
-    width: 77%;
-    gap: 10px;
-}
-.right {
-    flex: 0 0 35%;
+    width: 100%;
+    gap: 30px;
 }
 
-.intro {
-    display: flex;
-    width: 90%;
+.portrait {
+    z-index: 10;
+    max-height: 500px;
+    aspect-ratio: 1.55;
+    max-width: 400px;
+    /* border-bottom: 1px solid var(--accent-color); */
 }
+.portrait:after {
+    content: "";
+    height: 10px;
+    width: 100px;
+    display: block;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+.box {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 8%;
+    width: 30%;
+    aspect-ratio: 1;
+}
+.dots {
+    position: absolute;
+    z-index: 11;
+    bottom: 10%;
+    width: 20%;
+    right: 5%;
+    aspect-ratio: 1;
+}
+
 .imageFooter {
     width: 100%;
     border: 1px solid var(--primary-color);
@@ -44,4 +92,51 @@
     align-items: center;
     padding: 8px;
     gap: 10px;
+}
+
+.statusHighlight {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 591px) {
+    .intro {
+        flex-direction: row;
+    }
+
+    .header {
+        font-family: "Libre Barcode 128 Text", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    .right {
+        width: fit-content;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .intro {
+        gap: 5%;
+    }
+    .header {
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    .box {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1240px) {
+    .intro {
+        gap: 10%;
+    }
 }
