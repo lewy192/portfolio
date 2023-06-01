@@ -7,6 +7,9 @@
 
 .quote {
     color: white;
+    text-align: center;
+    width: 100%;
+    display: block;
 }
 .quote:before {
     display: flex;
@@ -52,4 +55,25 @@
     position: absolute;
     bottom: -47px;
     right: -1px;
+}
+
+@media screen and (min-width: 968px) {
+    .quoteContainer {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .quoteContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .quoteContainer {
+        width: 70%;
+    }
+    .quote {
+        font-size: larger;
+    }
 }
