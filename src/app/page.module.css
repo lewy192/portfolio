@@ -1,8 +1,11 @@
 .main {
-    height: 100vh;
+    padding: 150px 0;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--primary-bg-color);
+    gap: 70px;
+    height: fit-content;
 }

@@ -8,6 +8,7 @@
     align-items: center;
     background-color: var(--primary-bg-color);
     padding: 10px 20px;
+    z-index: 10000;
 }
 .accentChar {
     color: var(--accent-color);

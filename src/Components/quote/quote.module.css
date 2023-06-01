@@ -1,0 +1,55 @@
+.quoteContainer {
+    position: relative;
+    border: 1px solid var(--accent-color);
+    padding: 2rem;
+    width: 95%;
+}
+
+.quote {
+    color: white;
+}
+.quote:before {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    content: '"';
+    color: var(--accent-color);
+    font-size: 50px;
+    line-height: 30px;
+    background-image: linear-gradient(
+        var(--primary-bg-color),
+        var(--primary-bg-color)
+    );
+    padding: 2.5px;
+    background-size: 100% 40%;
+    top: -7.5px;
+}
+
+.quote:after {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    content: '"';
+    color: var(--accent-color);
+    font-size: 50px;
+    line-height: 50px;
+    background-image: linear-gradient(
+        var(--primary-bg-color),
+        var(--primary-bg-color)
+    );
+    padding: 2.5px;
+    bottom: -40px;
+    right: 5%;
+    background-size: 100% 40%;
+}
+.caption {
+    padding: 0.75rem;
+
+    border: 1px solid var(--accent-color);
+    border-top: none;
+    position: absolute;
+    bottom: -47px;
+    right: -1px;
+}
