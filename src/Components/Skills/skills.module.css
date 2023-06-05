@@ -1,0 +1,36 @@
+.skills {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+div.skills:nth-child(1) {
+    border-color: red;
+}
+.header {
+    color: white;
+    font-size: 16px;
+    padding: 1rem;
+    text-transform: capitalize;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.container {
+    border: 2px solid var(--primary-color);
+    width: fit-content;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.skill {
+    text-transform: capitalize;
+    list-style: none;
+}
+.skillsList {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}

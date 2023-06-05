@@ -1,0 +1,14 @@
+.separator {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.titleAccent {
+    color: var(--accent-color);
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--accent-color);
+}

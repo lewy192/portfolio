@@ -4,8 +4,14 @@ import styles from "./separator.module.css";
 export const Separator = ({ title, dividerLength }) => {
     return (
         <div className={styles.separator}>
-            <h2></h2>
-            <div></div>
+            <h2>
+                <span className={styles.titleAccent}>#</span>
+                {title}
+            </h2>
+            <div
+                className={styles.divider}
+                style={{ width: `${dividerLength}%` }}
+            ></div>
         </div>
     );
 };

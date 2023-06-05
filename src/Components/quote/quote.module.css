@@ -3,6 +3,7 @@
     border: 1px solid var(--accent-color);
     padding: 2rem;
     width: 95%;
+    margin-bottom: 47px;
 }
 
 .quote {

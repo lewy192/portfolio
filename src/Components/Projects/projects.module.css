@@ -1,0 +1,14 @@
+.projects {
+    width: 95%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 648px) {
+    .projects {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
