@@ -1,0 +1,20 @@
+.contact {
+    width: 95%;
+}
+
+.contactDetails {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linkedIn,
+.email,
+.github {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
