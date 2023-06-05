@@ -36,3 +36,11 @@
 .skillItem {
     list-style: none;
 }
+
+.link {
+    border: 1px solid var(--accent-color);
+    text-align: center;
+    padding: 8px 16px;
+    gap: 10px;
+    max-width: 150px;
+}
