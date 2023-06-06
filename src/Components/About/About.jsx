@@ -14,19 +14,17 @@ export const About = (props) => {
                 <div className={styles.left}>
                     A dedicated Software Developer, with an emphasis on Full
                     Stack Development, who thrives on challenges and embraces
-                    new learning opportunities. Enjoys working with a variety of
-                    technologies to gain fresh perspectives on programming
-                    patterns and system development, to leverage these insights
-                    in both commercial and extracurricular projects. A strong
-                    emphasis on writing maintainable code, whilst striving to
-                    build optimised solutions and deliver creative
+                    new learning opportunities.
+                    <br /> <br />
+                    Enjoys working with a variety of technologies to gain fresh
+                    perspectives on programming patterns and system development,
+                    to leverage these insights in both commercial and
+                    extracurricular projects. <br />
+                    <br />A strong emphasis on writing maintainable code, whilst
+                    striving to build optimised solutions and deliver creative
                     problem-solving approaches with React, NodeJs and Python.{" "}
                     <br />
-                    <br /> Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Voluptatibus sapiente reiciendis mollitia at quisquam
-                    sint magni impedit adipisci libero, itaque ratione? Expedita
-                    ipsam maxime quas deserunt, iste reprehenderit repellendus
-                    labore.
+                    <br />
                 </div>
                 <div className={styles.right}>
                     <Image src={dots} className={styles.dots} alt="" />
