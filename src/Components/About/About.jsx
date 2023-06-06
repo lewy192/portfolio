@@ -13,8 +13,8 @@ export const About = (props) => {
             <div className={styles.aboutContainer}>
                 <div className={styles.left}>
                     A dedicated Software Developer, with an emphasis on Full
-                    Stack Development, who thrives on challenges and embraces
-                    new learning opportunities.
+                    Stack Development, who thrives on challenges, embracing new
+                    learning opportunities.
                     <br /> <br />
                     Enjoys working with a variety of technologies to gain fresh
                     perspectives on programming patterns and system development,
