@@ -9,7 +9,10 @@ const paths = [
 export const NavBar = () => {
     return (
         <nav className={styles.nav}>
-            <div>WOGO</div>
+            <h1 className={styles.logo}>
+                Lewis
+                <span className={styles.logoHighlight}> Hill</span>
+            </h1>
             <div className={styles.navButtons}>
                 {paths.map((path) => (
                     <Link

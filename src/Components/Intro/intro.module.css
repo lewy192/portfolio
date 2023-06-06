@@ -4,6 +4,15 @@
     width: 95%;
 }
 
+.logo {
+    font-family: "Libre Barcode 128 Text";
+}
+
+.logoHighlight {
+    color: var(--accent-color);
+    font-family: "Libre Barcode 128 Text";
+}
+
 .left {
     /* flex: 0 0 65%; */
 

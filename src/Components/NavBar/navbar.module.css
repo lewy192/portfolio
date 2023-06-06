@@ -20,14 +20,33 @@
     /* flex: 1 1 40%; */
     padding: 10px;
     display: flex;
+
     gap: 30px;
 }
 
 .navItem {
     transition: 200ms;
     color: var(--primary-color);
+    font-size: 10px;
 }
 
 .navItem:hover {
     color: var(--active-color);
+}
+
+.logo {
+    font-family: "Fira Code";
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.logoHighlight {
+    color: var(--accent-color);
+    font-family: "Fira Code";
+}
+
+@media screen and (min-width: 600px) {
+    .navItem {
+        font-size: 16px;
+    }
 }
